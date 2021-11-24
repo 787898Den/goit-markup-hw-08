@@ -1,0 +1,121 @@
+.header {
+  background-color: var(--second-text-color);
+  border-bottom: solid 1px var(--border-color);
+  position: fixed;
+  min-height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+.close-burger-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+.burger-icon-icon,
+.close-burger-icon {
+  width: 40px;
+  height: 40px;
+}
+.mobilie-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobilie-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.mobilie-menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+// }
+.header__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.main-nav_list {
+  display: none;
+}
+
+.main-nav_item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+// .main-nav_list-connect {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
+// }
+.main-nav_list-connect {
+  @media screen and(max-width:768px) {
+  }
+  display: none;
+}
+.main-nav_link,
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--transition-timing);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms var(--transition-timing);
+  }
+}
+.header-contact {
+  display: flex;
+  color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.list-connect_contacts-icon {
+  justify-content: center;
+  margin-right: 10px;
+  fill: currentColor;
+}

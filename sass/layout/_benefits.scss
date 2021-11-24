@@ -1,0 +1,24 @@
+.benefits-section {
+  display: flex;
+}
+.benefits-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fourth-text-color);
+  height: 120px;
+  margin-bottom: 30px;
+}
+.benefits-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.benefits-item {
+  width: 270px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
