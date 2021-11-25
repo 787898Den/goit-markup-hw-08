@@ -11,7 +11,9 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
 }
 .burger-button {
   background-color: transparent;
@@ -44,18 +46,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  transform: translate(0);
   padding: 48px 40px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  background-color: red;
 }
 .mobilie-menu.is-open {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   pointer-events: all;
+  transform: translateX(100%);
 }
 .mobilie-menu {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -63,6 +65,9 @@
 //   display: flex;
 //   align-items: center;
 // }
+.main-nav {
+  justify-content: space-between;
+}
 .header__link {
   padding-top: 32px;
   padding-bottom: 32px;
