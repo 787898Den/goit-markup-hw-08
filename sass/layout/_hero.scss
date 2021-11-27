@@ -1,10 +1,14 @@
 .hero {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 480px;
   height: 400px;
   text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  margin: 0 auto;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  margin: 0;
   background-color: var(--background-color-footer);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,14 +17,40 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../image/рабочий-процесс.jpg);
+    url(/image/hero-mobilie-img-min.jpg);
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/image/hero-tablet-img-min.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--second-text-color);
+    margin-bottom: 30px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/image/hero-desktop-img-min.jpg);
+  }
 }
 .hero-heading {
   display: flex;
   justify-content: center;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-text-color);

@@ -2,6 +2,15 @@
 .logo-header-light-wrap,
 .logo-header-dark-wrap {
   font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -18,7 +27,6 @@
 .logo-header {
   // display: flex;
   // align-items: center;
-  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
   // margin-right: 93px;
