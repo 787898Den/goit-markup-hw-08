@@ -8,15 +8,16 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-@media screen and (min-width: 1200px) {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
 }
 .logo-header-dark-wrap {
   color: var(--primary-title-color);
@@ -25,17 +26,19 @@
   color: var(--second-text-color);
 }
 .logo-header {
-  // display: flex;
-  // align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  // margin-right: 93px;
+
   @media screen and(min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
   }
   @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;
   }
 }
