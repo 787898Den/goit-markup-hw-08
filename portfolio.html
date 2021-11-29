@@ -48,7 +48,7 @@
         <ul class="list main-nav_list-connect">
           <li class="main-nav_item">
             <a
-              class="main-nav_link link header-contact header__link"
+              class="main-nav_link link header-contact item-connect__link"
               href="info@devstudio.com"
             >
               <svg class="list-connect_contacts-icon" width="16" height="12">
@@ -59,7 +59,7 @@
           </li>
           <li class="main-nav_item">
             <a
-              class="main-nav_link link header-contact header__link"
+              class="main-nav_link link header-contact item-connect__link"
               id="contacts"
               href="+380961111111"
             >
@@ -73,7 +73,7 @@
       </div>
     </header>
 
-    <!-- <main>
+    <main>
       <section class="section">
         <div class="container">
           <ul class="list filters">
@@ -105,7 +105,30 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img src="image/ноутбук.jpg" alt="ноутбук" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/desktop/laptop-desktop-min.webp    1x,
+                        ./image/desktop/laptop-desktop@2x-min.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/tablet/laptop-tablet-min.webp    1x,
+                        ./image/tablet/laptop-tablet@2x-min.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./image/mobilie/laptop-mobilie-min.webp 1x
+                        ./image/mobilie/laptop-mobilie@2x-min.webp 2x
+                      "
+                    />
+                  </picture>
+                  <img src="#" alt="ноутбук" />
                   <p class="project-thumb-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -122,7 +145,31 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img src="image/спорт.jpg" alt="спорт" width="370" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./image/desktop/sport-desktop-min.webp    1x,
+                        ./image/desktop/sport-desktop@2x-min.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./image/tablet/sportp-tablet-min.webp   1x,
+                        ./image/tablet/sport-tablet@2x-min.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./image/mobilie/sport-mobilie-min.webp 1x
+                        ./image/mobilie/sport-mobilie@2x-min.webp 2x
+                      "
+                    />
+                  </picture>
+                  <img src="#" alt="спорт" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -142,11 +189,7 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="image/форель-морпродукты.jpg"
-                    alt="форель-морпродукты"
-                    width="370"
-                  />
+                  <img src="#" alt="риба" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -164,7 +207,7 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img src="image/наушники.jpg" alt="наушники" width="370" />
+                  <img src="#" alt="наушники" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -182,11 +225,7 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="image/две-коробки.jpg"
-                    alt="две-коробки"
-                    width="370"
-                  />
+                  <img src="#" alt="коробка" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -204,7 +243,7 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img src="image/монитор.jpg" alt="монитор" width="370" />
+                  <img src="#" alt="монитор" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -222,7 +261,7 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img src="image/журнал.jpg" alt="журнал" width="370" />
+                  <img src="#" alt="журнал" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -240,7 +279,7 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img src="image/лейбл.jpg" alt="лейбл" width="370" />
+                  <img src="#" alt="лейбл" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -258,11 +297,7 @@
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="image/работает-за-ноутбуком.jpg"
-                    alt="работает-за-ноутбуком"
-                    width="370"
-                  />
+                  <img src="#" alt="работает-за-ноутбуком" />
                   <p class="project-thumb-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Proin blandit, massa a cursus tristique, felis magna
@@ -374,6 +409,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

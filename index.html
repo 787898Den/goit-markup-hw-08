@@ -49,7 +49,7 @@
         <ul class="list main-nav_list-connect">
           <li class="main-nav_item-connect">
             <a
-              class="main-nav_link link contact-link header__link"
+              class="main-nav_link link contact-link item-connect__link"
               href="mail-to"
             >
               <svg class="list-connect_contacts-icon" width="16" height="12">
@@ -60,7 +60,7 @@
           </li>
           <li class="main-nav_item-connect">
             <a
-              class="main-nav_link link contact-link header__link"
+              class="main-nav_link link contact-link item-connect__link"
               id="contacts"
               href="tel"
             >
@@ -159,34 +159,39 @@
         <h2 class="heading-title">Чем занимаемся</h2>
         <ul class="list benefits-section">
           <li class="auxiliary-item">
-            <img
-              src="image/пишет-код.jpg"
-              alt="пишет-код"
-              width="370"
-              height="294"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./image/desktop/write-code-desktop-min.webp 1x"
+                type="image/webp"
+              />
+              <img src="#" alt="пишет-код" />
+            </picture>
+
             <div class="auxiliary-wrap">
               <p class="auxiliary-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </div>
           </li>
           <li class="auxiliary-item">
-            <img
-              src="image/семантика.jpg"
-              alt="семантика"
-              width="370"
-              height="294"
-            />
+            <picture>
+              <source
+                srcset="./image/desktop/adaptive-layout-desktop-min.webp 1x"
+                type="image/webp"
+              />
+              <img src="#" alt="адаптивная-вёрстка" />
+            </picture>
             <div class="auxiliary-wrap">
               <p class="auxiliary-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </div>
           </li>
           <li class="auxiliary-item">
-            <img
-              src="image/демонстрация-макета.jpg"
-              alt="демонстрация-макета"
-              width="370"
-              height="294"
-            />
+            <picture
+              ><source
+                srcset="./image/desktop/demonstration-desktop-min.webp 1x"
+                type="image/webp"
+              />
+              <img src="#" alt="демонстрация" width="370" height="294" />
+            </picture>
             <div class="auxiliary-wrap">
               <p class="auxiliary-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </div>
@@ -195,12 +200,36 @@
       </div>
     </section>
 
-    <!-- <section class="section team-section">
+    <section class="section team-section">
       <div class="container team-container">
         <h2 class="heading-title">Наша команда</h2>
         <ul class="list benefits-section">
           <li class="team-item">
-            <img src="image/фото-игорь.jpg" alt="фото-игорь" width="270" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/igor-desktop-min.webp    1x,
+                  ./image/desktop/igor-desktop@2x-min.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/tablet/igor-tablet-min.webp    1x,
+                  ./image/tablet/igor-tablet@2x-min.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./image/mobilie/ihor-mobilie-min.webp   1x,
+                  ./image/mobilie/ihor-mobile@2x-min.webp 2x
+                "
+              />
+              <img src="#" alt="игорь-демьяненко" />
+            </picture>
             <div class="team-item-wrap">
               <h3 class="team-title">Игорь Демьяненко</h3>
               <p class="team-text">Product Designer</p>
@@ -237,7 +266,30 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="image/фото-ольга.jpg" alt="фото-ольга" width="270" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/olga-desktop-min.webp    1x,
+                  ./image/desktop/olga-desktop@2x-min.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/tablet/olga-tablet-min.webp    1x,
+                  ./image/tablet/olga-tablet@2x-min.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./image/mobilie/olga-mobilie-min.webp    1x,
+                  ./image/mobilie/olga-mobilie@2x-min.webp 2x
+                "
+              />
+              <img src="#" alt="ольга-репина" />
+            </picture>
             <div class="team-item-wrap">
               <h3 class="team-title">Ольга Репина</h3>
               <p class="team-text">Frontend Developer</p>
@@ -274,7 +326,30 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="image/фото-николай.jpg" alt="фото-николай" width="270" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/nikolai-desktop-min.webp    1x,
+                  ./image/desktop/nikolai-desktop@2x-min.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/tablet/nikolai-tablet-min.webp    1x,
+                  ./image/tablet/nikolai-tablet@2x-min.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./image/mobilie/nikolai-mobilie-min.webp    1x,
+                  ./image/mobilie/nikolai-mobilie@2x-min.webp 2x
+                "
+              />
+              <img src="#" alt="николай-тарасов" />
+            </picture>
             <div class="team-item-wrap">
               <h3 class="team-title">Николай Тарасов</h3>
               <p class="team-text">Marketing</p>
@@ -314,7 +389,30 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="image/фото-михаил.jpg" alt="фото-михаил" width="270" />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/michail-desktop-min.webp    1x,
+                  ./image/desktop/michail-desktop@2x-min.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/tablet/michail-tablet-min.webp    1x,
+                  ./image/tablet/michail-tablet@2x-min.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./image/mobilie/michail-mobilie-min.webp    1x,
+                  ./image/mobilie/michail-mobilie@2x-min.webp 2x
+                "
+              />
+              <img src="#" alt="михаил-ермаков" />
+            </picture>
             <div class="team-item-wrap">
               <h3 class="team-title">Михаил Ермаков</h3>
               <p class="team-text">UI Designer</p>
@@ -352,7 +450,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!-- CLIENTS-SECTION -->
     <section class="section">
       <div class="container">
@@ -489,7 +587,7 @@
         </form>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-button">
           <svg width="18" height="18">
@@ -561,7 +659,7 @@
           <button class="modal-form-button" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
