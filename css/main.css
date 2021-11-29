@@ -89,21 +89,18 @@ button {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 1px solid red;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    outline: 1px solid red;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    outline: 1px solid red;
   }
 }
 
@@ -1101,14 +1098,17 @@ button {
 
 .header {
   background-color: var(--second-text-color);
+  border-bottom: solid 1px var(--border-color);
   min-height: 60px;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     min-height: 80px;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -1120,6 +1120,7 @@ button {
   .header {
     border-bottom: solid 1px var(--border-color);
     min-height: 80px;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
@@ -1210,6 +1211,10 @@ button {
   }
 }
 
+.main-nav_list-connect {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 767px) {
   .main-nav_list-connect {
     display: none;
@@ -1220,7 +1225,6 @@ button {
   .main-nav_list-connect {
     display: flex;
     align-items: center;
-    margin-left: auto;
   }
 }
 
