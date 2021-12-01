@@ -78,7 +78,7 @@
           </svg>
         </button>
         <!-- END-MOBILIE-MENU-->
-        <div class="mobilie-menu is-open" data-menu>
+        <div class="mobilie-menu" data-menu>
           <button type="button" class="close-burger-button" data-menu-close>
             <svg class="close-burger-icon">
               <use href="./image/icons.svg#close-burger-icon"></use>
@@ -221,11 +221,20 @@
           <li class="auxiliary-item">
             <picture>
               <source
-                media="(min-width: 768px)"
-                srcset="./image/desktop/write-code-desktop-min.webp 1x"
-                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/write-code-desktop-min.webp.webp 1x,
+                  ./image/desktop/write-code-desktop-min.webp.webp 2x
+                "
               />
-              <img src="#" alt="пишет-код" />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/write-code-desktop-min.jpg.jpg 1x,
+                  ./image/desktop/write-code-desktop-min.jpg.jpg 2x
+                "
+              />
+              <img src="#" alt="пишет-код" width="370" height="294" />
             </picture>
 
             <div class="auxiliary-wrap">
@@ -235,10 +244,19 @@
           <li class="auxiliary-item">
             <picture>
               <source
-                srcset="./image/desktop/adaptive-layout-desktop-min.webp 1x"
-                type="image/webp"
+                srcset="
+                  ./image/desktop/adaptive-layout-desktop-min.webp.webp 1x,
+                  ./image/desktop/adaptive-layout-desktop-min.webp.webp 2x
+                "
               />
-              <img src="#" alt="адаптивная-вёрстка" />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/adaptive-layout-desktop-min.jpg.jpg 1x,
+                  ./image/desktop/adaptive-layout-desktop-min.jpg.jpg 2x
+                "
+              />
+              <img src="#" alt="адаптивная-вёрстка" width="370" height="294" />
             </picture>
             <div class="auxiliary-wrap">
               <p class="auxiliary-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
@@ -247,8 +265,17 @@
           <li class="auxiliary-item">
             <picture
               ><source
-                srcset="./image/desktop/demonstration-desktop-min.webp 1x"
-                type="image/webp"
+                srcset="
+                  ./image/desktop/demonstration-desktop-min.webp.webp 1x,
+                  ./image/desktop/demonstration-desktop-min.webp.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/demonstration-desktop-min.jpg.jpg 1x,
+                  ./image/desktop/demonstration-desktop-min.jpg.jpg 2x
+                "
               />
               <img src="#" alt="демонстрация" width="370" height="294" />
             </picture>
@@ -269,23 +296,43 @@
               <source
                 media="(min-width: 1200px)"
                 srcset="
-                  ./image/desktop/igor-desktop-min.webp    1x,
-                  ./image/desktop/igor-desktop@2x-min.webp 2x
+                  ./image/desktop/igor-desktop-min.webp.webp    1x,
+                  ./image/desktop/igor-desktop@2x-min.webp.webp 2x
                 "
-                type="image/webp"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/ihor-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/ihor-desktop@2x-min.jpg.jpg 2x
+                "
               />
               <source
                 media="(min-width: 768px)"
                 srcset="
-                  ./image/tablet/igor-tablet-min.webp    1x,
-                  ./image/tablet/igor-tablet@2x-min.webp 2x
+                  ./image/tablet/igor-tablet-min.webp.webp    1x,
+                  ./image/tablet/igor-tablet@2x-min.webp.webp 2x
                 "
               />
               <source
-                media="(min-width: 320px)"
+                media="(min-width: 768px)"
                 srcset="
-                  ./image/mobilie/ihor-mobilie-min.webp   1x,
-                  ./image/mobilie/ihor-mobile@2x-min.webp 2x
+                  ./image/desktop/ihor-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/ihor-desktop@2x-min.jpg.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="
+                  ./image/mobilie/ihor-mobilie-min.webp.webp   1x,
+                  ./image/mobilie/ihor-mobile@2x-min.webp.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="
+                  ./image/desktop/ihor-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/ihor-desktop@2x-min.jpg.jpg 2x
                 "
               />
               <img src="#" alt="игорь-демьяненко" />
@@ -330,22 +377,43 @@
               <source
                 media="(min-width: 1200px)"
                 srcset="
-                  ./image/desktop/olga-desktop-min.webp    1x,
-                  ./image/desktop/olga-desktop@2x-min.webp 2x
+                  ./image/desktop/olga-desktop-min.webp.webp    1x,
+                  ./image/desktop/olga-desktop@2x-min.webp.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/olga-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/olga-desktop@2x-min.jpg.jpg 2x
                 "
               />
               <source
                 media="(min-width: 768px)"
                 srcset="
-                  ./image/tablet/olga-tablet-min.webp    1x,
-                  ./image/tablet/olga-tablet@2x-min.webp 2x
+                  ./image/tablet/olga-tablet-min.webp.webp    1x,
+                  ./image/tablet/olga-tablet@2x-min.webp.webp 2x
                 "
               />
               <source
-                media="(min-width: 320px)"
+                media="(min-width: 768px)"
                 srcset="
-                  ./image/mobilie/olga-mobilie-min.webp    1x,
-                  ./image/mobilie/olga-mobilie@2x-min.webp 2x
+                  ./image/desktop/olga-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/olga-desktop@2x-min.jpg.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="
+                  ./image/mobilie/olga-mobilie-min.webp.webp    1x,
+                  ./image/mobilie/olga-mobilie@2x-min.webp.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="
+                  ./image/desktop/-desktop-min.jpg.jpg        1x,
+                  ./image/desktop/olga-desktop@2x-min.jpg.jpg 2x
                 "
               />
               <img src="#" alt="ольга-репина" />
@@ -390,22 +458,43 @@
               <source
                 media="(min-width: 1200px)"
                 srcset="
-                  ./image/desktop/nikolai-desktop-min.webp    1x,
-                  ./image/desktop/nikolai-desktop@2x-min.webp 2x
+                  ./image/desktop/nikolai-desktop-min.webp.webp    1x,
+                  ./image/desktop/nikolai-desktop@2x-min.webp.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/nikolai-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/nikolai-desktop@2x-min.jpg.jpg 2x
                 "
               />
               <source
                 media="(min-width: 768px)"
                 srcset="
-                  ./image/tablet/nikolai-tablet-min.webp    1x,
-                  ./image/tablet/nikolai-tablet@2x-min.webp 2x
+                  ./image/tablet/nikolai-tablet-min.webp.webp    1x,
+                  ./image/tablet/nikolai-tablet@2x-min.webp.webp 2x
                 "
               />
               <source
-                media="(min-width: 320px)"
+                media="(min-width: 768px)"
                 srcset="
-                  ./image/mobilie/nikolai-mobilie-min.webp    1x,
-                  ./image/mobilie/nikolai-mobilie@2x-min.webp 2x
+                  ./image/desktop/nikolai-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/nikolai-desktop@2x-min.jpg.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="
+                  ./image/mobilie/nikolai-mobilie-min.webp.webp    1x,
+                  ./image/mobilie/nikolai-mobilie@2x-min.webp.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="
+                  ./image/desktop/nikolai-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/nikolai-desktop@2x-min.jpg.jpg 2x
                 "
               />
               <img src="#" alt="николай-тарасов" />
@@ -453,22 +542,36 @@
               <source
                 media="(min-width: 1200px)"
                 srcset="
-                  ./image/desktop/michail-desktop-min.webp    1x,
-                  ./image/desktop/michail-desktop@2x-min.webp 2x
+                  ./image/desktop/michail-desktop-min.webp.webp    1x,
+                  ./image/desktop/michail-desktop@2x-min.webp.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/desktop/michail-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/michail-desktop@2x-min.jpg.jpg 2x
                 "
               />
               <source
                 media="(min-width: 768px)"
                 srcset="
-                  ./image/tablet/michail-tablet-min.webp    1x,
-                  ./image/tablet/michail-tablet@2x-min.webp 2x
+                  ./image/tablet/michail-tablet-min.webp.webp    1x,
+                  ./image/tablet/michail-tablet@2x-min.webp.webp 2x
                 "
               />
               <source
-                media="(min-width: 320px)"
+                media="(min-width: 768px)"
                 srcset="
-                  ./image/mobilie/michail-mobilie-min.webp    1x,
-                  ./image/mobilie/michail-mobilie@2x-min.webp 2x
+                  ./image/desktop/michail-desktop-min.jpg.jpg    1x,
+                  ./image/desktop/michail-desktop@2x-min.jpg.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 280px)"
+                srcset="
+                  ./image/mobilie/michail-mobilie-min.webp.webp    1x,
+                  ./image/mobilie/michail-mobilie@2x-min.webp.webp 2x
                 "
               />
               <img src="#" alt="михаил-ермаков" />
@@ -566,7 +669,7 @@
       <div class="container common-container">
         <div class="footer-container-wrapp">
           <div class="footer-address">
-            <a class="logo-link link footer-logo" href=""
+            <a class="footer-logo logo-link link" href="#"
               >Web<span class="logo-header-light-wrap">Studio</span>
             </a>
             <div class="footer-address-connect">

@@ -1,14 +1,13 @@
 .header {
   background-color: var(--second-text-color);
   border-bottom: solid 1px var(--border-color);
-  // position: fixed;
+
   min-height: 60px;
   top: 0;
   left: 0;
   z-index: 3;
   @media screen and (min-width: 768px) {
     min-height: 80px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -17,7 +16,7 @@
   @media screen and (min-width: 1200px) {
     border-bottom: solid 1px var(--border-color);
     min-height: 80px;
-    position: fixed;
+
     top: 0;
     left: 0;
     z-index: 3;
@@ -218,9 +217,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 0 48px 40px;
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms var(--transition-timing),
     visibility 250ms var(--transition-timing);
@@ -288,6 +287,7 @@
 }
 .social-mobilie_list {
   display: flex;
+  flex-wrap: wrap;
 }
 .social-mobilie__item:not(:first-child) {
   padding-left: 10px;

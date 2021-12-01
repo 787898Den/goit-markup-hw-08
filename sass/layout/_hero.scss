@@ -14,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/image/mobilie/hero-mobilie-min.webp);
+    url(../image/mobilie/hero-mobilie-min.jpg.jpg);
   @media screen and(min-device-pixel-ratio:2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -22,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/image/mobilie/hero-mobilie@2x-min.webp);
+      url(../image/mobilie/hero-mobilie@2x-min.jpg.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -31,7 +31,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/image/tablet/hero-tablet-min.webp);
+      url(../image/tablet/hero-tablet-min.jpg.jpg);
     @media screen and(min-device-pixel-ratio:2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -39,12 +39,11 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/image/tablet/hero-tablet@2x-min.webp);
+        url(../image/tablet/hero-tablet@2x-min.jpg.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    outline: 1px solid red;
     display: flex;
     justify-content: center;
     max-width: 1600px;
@@ -57,7 +56,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/image/desktop/hero-desktop-min.webp);
+      url(../image/desktop/hero-desktop-min.jpg.jpg);
     @media screen and(min-device-pixel-ratio:2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -65,11 +64,10 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/image/desktop/hero-desktop@2x-min.webp);
+        url(../image/desktop/hero-desktop@2x-min.jpg.jpg);
     }
   }
 }
-
 .hero-heading {
   justify-content: center;
   font-weight: 900;
@@ -79,7 +77,7 @@
   text-transform: uppercase;
   color: var(--second-text-color);
   margin-bottom: 30px;
-  margin: auto;
+
   @media screen and (min-width: 1200px) {
     font-style: normal;
     font-weight: 900;
@@ -88,6 +86,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
     color: var(--second-text-color);
   }
 }
