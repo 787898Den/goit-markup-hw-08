@@ -472,12 +472,6 @@ button {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .modal {
-    top: 53%;
-  }
-}
-
 .project-thumb {
   position: relative;
   overflow: hidden;
