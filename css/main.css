@@ -61,7 +61,7 @@ button {
 
 .backdrop {
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.2);
@@ -457,8 +457,7 @@ button {
 .modal {
   display: flex;
   position: absolute;
-  z-index: 9999999;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
   background-color: var(--second-text-color);
