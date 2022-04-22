@@ -474,7 +474,7 @@ button {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .modal {
-    top: 55%;
+    top: 53%;
   }
 }
 
